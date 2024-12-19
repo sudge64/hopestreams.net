@@ -35,7 +35,7 @@ const ContactForm = () => {
               required
             />
           </div>
-            <button type="button">Send Message</button>
+            <button type="submit">Send Message</button>
         </div>
       </form>
     </section>
