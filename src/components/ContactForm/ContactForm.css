@@ -50,3 +50,7 @@ form button:hover {
   color: #001F3F;
   border: 1px solid #001F3F;
 }
+
+form .honey {
+  display: none;
+}

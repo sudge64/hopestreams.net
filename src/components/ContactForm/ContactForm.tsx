@@ -1,31 +1,19 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./ContactForm.css";
 
 const ContactForm = () => {
-  const [fullName, setFullName] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleMailTo = () => {
-    const subject = encodeURIComponent(`New Message from ${fullName} through the Contact Form`);
-    const body = encodeURIComponent(
-      `${message}`,
-    );
-    return `mailto:contact@hopestreams.net?subject=${subject}&body=${body}`;
-  };
 
   return (
     <section className="contact">
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form action="https://formsubmit.co/contact@hopestreams.net" method="POST">
         <div className="contactForm">
           <div className="input-box">
             <label>Full Name</label>
+            <input type="text" name="_honey" className="honey"/>
             <input
               type="text"
+              name="name"
               className="field"
               placeholder="Enter your name"
-              value={fullName}
-              onChange={(e) => setFullName(e.target.value)}
               required
             />
           </div>
@@ -33,6 +21,7 @@ const ContactForm = () => {
             <label>Email</label>
             <input
               type="email"
+              name="email"
               className="field"
               placeholder="Enter your email"
               required
@@ -43,17 +32,10 @@ const ContactForm = () => {
             <textarea
               className="field message"
               placeholder="Enter your message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
               required
             />
           </div>
-          <Link
-            to={handleMailTo()}
-            onClick={(e) => (fullName && message ? null : e.preventDefault())}
-          >
             <button type="button">Send Message</button>
-          </Link>
         </div>
       </form>
     </section>
