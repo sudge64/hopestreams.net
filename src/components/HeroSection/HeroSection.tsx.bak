@@ -1,0 +1,21 @@
+import React from "react";
+import './HeroSection.css';
+import background from '../../assets/living_water.jpg';
+import logo from '../../assets/hopestreams_white_logo.png';
+
+const HeroSection = () => {
+  return (
+  <div 
+      className="hero-section" 
+      style={{ backgroundImage: `url(${background})` }}
+    >
+      <div className="content">
+        <div className="hero-logo">
+          <img src={logo} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;

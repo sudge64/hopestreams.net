@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Corben, Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #001f3f;
+}
+
+main {
+  flex: 1;
+}
+
+.text-background {
+  background-color: rgba(255, 255, 255, 0.77);
+  text-align: justify;
+  height: 100%;
+}
+

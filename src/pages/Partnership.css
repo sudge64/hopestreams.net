@@ -1,0 +1,10 @@
+.give-forms {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+}

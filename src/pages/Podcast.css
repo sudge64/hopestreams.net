@@ -1,0 +1,23 @@
+.podcast-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast-container h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.podcast-container img {
+  width: 25%;
+  height: 25%;
+  display: flex;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .podcast-container {
+    flex-direction: column;
+  }
+}
